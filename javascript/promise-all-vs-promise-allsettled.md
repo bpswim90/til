@@ -16,7 +16,6 @@ console.log(result)
     { status: 'rejected', reason: 'Nope'},
     { status: 'fulfilled', value: 'Yeah!}
 ]
-
 ```
 
 2. `Promise.all` returns the values returned by its input promises, whereas `Promise.allSettled` returns objects containing the status and value.
@@ -33,5 +32,4 @@ const [blah2] = await Promise.allSettled([Promise.resolve('Hello')])
 
 console.log(blah2)
 > { status: 'fulfilled', value: 'Hello' }
-
 ```
